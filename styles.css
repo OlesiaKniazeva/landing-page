@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  flex: 1;
+}
+
+.header-logo {
+  width: 80px;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px 40px;
+}
+
+.links-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.bordered-image {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.upper-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 40px 70px 40px;
+  /*min-width: 300px;*/
+  flex-shrink: 1;
+  gap: 30px;
+}
+
+.upper-filling {
+  background-color: rgb(221, 214, 239);
+}
+
+.main-image {
+  width: 350px;
+  height: auto;
+}
+
+.subheader {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.site-header {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.sign-up-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(77, 118, 91);
+  color: white;
+  font-weight:500;
+}
+.first-middle-content {
+  background-color: white;
+  padding: 30px;
+}
+
+.second-middle-content {
+  background-color: rgb(235, 213, 243);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-block-signature {
+  /*align-items: flex-end;*/
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(51, 38, 91);
+  color: white;
+  padding: 15px;
+  font-size: small;
+}
+
+.lower-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.sign-up-box {
+  background-color: rgb(102, 172, 146);
+  border-radius: 5px;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
