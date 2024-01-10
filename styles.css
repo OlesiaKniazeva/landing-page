@@ -53,8 +53,8 @@ a {
 }
 
 .bordered-image {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .small-description-block {
@@ -70,19 +70,23 @@ a {
 .upper-content {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 50px 40px 70px 40px;
-  /*min-width: 300px;*/
-  flex-shrink: 1;
   gap: 30px;
 }
 
 .upper-filling {
-  background-color: rgb(221, 214, 239);
+  background-color: #e3dfec;
 }
 
 .main-image {
-  min-width: 350px;
-  height: auto;
+  max-width: 400px;
+  width: 350px;
+  flex: 1;
+}
+
+.left-info-block {
+  flex: 1;
 }
 
 .site-header {
@@ -100,7 +104,6 @@ a {
 
 .image-description {
   margin-top: 10px;
-  /*padding: 0 50px;*/
 }
 
 .site-description {
@@ -114,14 +117,14 @@ a {
   gap: 50px;
 }
 
-.sign-up-button {
+.upper-content .sign-up-button {
   margin-top: 10px;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
-  background-color: rgb(77, 118, 91);
+  background-color: #538083;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
 }
 .first-middle-content {
   background-color: white;
@@ -129,23 +132,43 @@ a {
 }
 
 .second-middle-content {
-  background-color: rgb(235, 213, 243);
+  background-color: #79588814;
   padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.second-middle-content .text-container {
+  width: fit-content;
+}
+
+.second-middle-content .text-block {
+  text-align: center;
+  font-style: italic;
+  font-size: 23px;
+  padding: 10px;
+}
+
 .text-block-signature {
-  /*align-items: flex-end;*/
+  font-weight: 600;
+  font-size: 15px;
+  padding-right: 40px;
+  text-align: right;
+}
+
+.text-content-header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(51, 38, 91);
-  color: white;
+  background-color: #e3dfec;
+  color: rgb(22, 1, 1);
   padding: 15px;
   font-size: small;
 }
@@ -158,11 +181,23 @@ a {
 }
 
 .sign-up-box {
-  background-color: rgb(102, 172, 146);
-  border-radius: 5px;
-  width: 500px;
-  padding: 20px;
+  background-color: #84b7a975;
+  border-radius: 15px;
+  width: 900px;
+  padding: 30px 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 40px;
+  gap: 80px;
+}
+
+.lower-content .sign-up-button {
+  border: 3px solid #538083;
+  background-color: #67867e0e;
+  border-radius: 8px;
+  padding: 10px;
+  padding: 5px 18px;
+  flex-shrink: 0;
+  font-weight: 600;
 }
